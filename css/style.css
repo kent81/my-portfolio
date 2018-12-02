@@ -1,7 +1,10 @@
 .navbar-brand {
   padding: 0px 15px 0px 15px;
 }
-
+/* .navbar {
+  background-color: black;
+}
+*/
 @media (min-width: 0) {
 #hero {
   background-image: url(../images/bgmain.jpg);
@@ -12,6 +15,21 @@
   }
 }
 
+/*
 #navTabs {
-  margin: 300 auto;
+  margin: auto;
+}
+
+
+#navTabs ul {
+  list-style: none;
+}
+
+#navTabs li {
+  display: inline-block;
+}
+*/
+
+#hero h3 {
+  color: white;
 }
