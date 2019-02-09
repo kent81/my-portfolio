@@ -1,5 +1,10 @@
+#navigation1 {
+ background-color: #343a40;
+}
+
 #brand1 {
-  margin-left: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #navTabs li {
