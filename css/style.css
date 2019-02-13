@@ -1,10 +1,19 @@
-#navigation1 {
- background-color: #343a40;
-}
+#navigation {
+  background-image: url(../images/bgmain.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.7;
+  height: 100vh;
+  min-height: 650px;
+ }
 
 #brand1 {
-  margin-left: 20%;
+  margin-left: 10%;
   margin-right: 20%;
+}
+
+#brand1 a {
+  color: rgb(102, 3, 3);
 }
 
 #navTabs li {
@@ -35,20 +44,16 @@
 }
 
 @media (min-width: 0) {
-#hero {
-  background-image: url(../images/bgmain.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  height: 100vh;
-  min-height: 650px;
-  }
+
 }
 
 #hero h1 {
-  color: rgb(255, 51, 0);
-  margin-left: 30%;
+  color: rgb(102, 3, 3);
+  margin-left: 20%;
+  text-align: right;
 }
-#hero h3 {
-  color: rgb(0, 255, 255);
-  margin-right: 30%;
+#hero h4 {
+  color: rgb(0, 0, 0);
+  margin-right: 20%;
+  text-align: left;
 }
