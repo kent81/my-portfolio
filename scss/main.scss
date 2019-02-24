@@ -1,10 +1,5 @@
 #navigation {
-  background-image: url(../images/bgmain.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  opacity: 0.7;
-  height: 100vh;
-  min-height: 650px;
+
  }
 
 #brand1 {
@@ -49,6 +44,14 @@
 }
 }
 
+#hero {
+  background-image: url(../images/bgmain.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.7;
+  height: 100vh;
+  min-height: 650px;
+}
 #hero h1 {
   font-size: 70px;
   color: rgb(77, 4, 4);

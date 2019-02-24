@@ -1,0 +1,52 @@
+#brand1 {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+#brand1 a {
+  color: #4d0404; }
+
+#navTabs li {
+  display: inline-block;
+  margin-left: 35px;
+  padding-top: 15px;
+  position: relative; }
+
+#navTabs a:hover {
+  color: aqua; }
+
+#navTabs a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition-duration: 250ms; }
+
+#navTabs a:hover::before {
+  width: 100%; }
+
+@media (min-width: 0px) {
+  .vl {
+    border-left: 3px solid #4d0404; } }
+
+#hero {
+  background-image: url(../images/bgmain.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.7;
+  height: 100vh;
+  min-height: 650px; }
+
+#hero h1 {
+  font-size: 70px;
+  color: #4d0404;
+  margin-left: 20%;
+  text-align: right; }
+
+#hero h4 {
+  color: black;
+  margin-right: 20%;
+  text-align: left; }
