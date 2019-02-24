@@ -9,11 +9,11 @@
 
 #brand1 {
   margin-left: 10%;
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 #brand1 a {
-  color: rgb(102, 3, 3);
+  color: rgb(77, 4, 4);
 }
 
 #navTabs li {
@@ -43,12 +43,15 @@
   width: 100%;
 }
 
-@media (min-width: 0) {
-
+@media (min-width: 0px) {
+.vl {
+  border-left: 3px solid rgb(77, 4, 4);
+}
 }
 
 #hero h1 {
-  color: rgb(102, 3, 3);
+  font-size: 70px;
+  color: rgb(77, 4, 4);
   margin-left: 20%;
   text-align: right;
 }
