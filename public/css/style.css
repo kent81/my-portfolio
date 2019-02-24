@@ -1,9 +1,8 @@
 #brand1 {
   margin-left: 10%;
   margin-right: 10%; }
-
-#brand1 a {
-  color: #4d0404; }
+  #brand1 a {
+    color: #4d0404; }
 
 #navTabs li {
   display: inline-block;
@@ -32,7 +31,7 @@
   .vl {
     border-left: 3px solid #4d0404; } }
 
-#hero {
+.bkg-hero {
   background-image: url(../images/bgmain.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -40,13 +39,13 @@
   height: 100vh;
   min-height: 650px; }
 
-#hero h1 {
+h1 {
   font-size: 70px;
-  color: #4d0404;
+  color: #d30c0c;
   margin-left: 20%;
   text-align: right; }
 
-#hero h4 {
+h4 {
   color: black;
   margin-right: 20%;
   text-align: left; }

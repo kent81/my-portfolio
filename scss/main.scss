@@ -1,50 +1,76 @@
-#navigation {
-
- }
-
 #brand1 {
   margin-left: 10%;
   margin-right: 10%;
+
+  a {
+    color: rgb(77, 4, 4);
+  }
 }
 
-#brand1 a {
-  color: rgb(77, 4, 4);
+// #brand1 a {
+//   color: rgb(77, 4, 4);
+// }
+
+#navTabs {
+  li {
+    display: inline-block;
+    margin-left: 35px;
+    padding-top: 15px;
+    position: relative;
+  }
+  a:hover {
+    color: aqua;
+  }
+  a::before {
+    content:"";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition-duration: 250ms;
+  }
+  a:hover::before {
+    width: 100%;
+  }
 }
 
-#navTabs li {
-  display: inline-block;
-  margin-left: 35px;
-  padding-top: 15px;
-  position: relative;
-}
-#navTabs a:hover {
-  color: aqua;
-}
+// #navTabs li {
+//   display: inline-block;
+//   margin-left: 35px;
+//   padding-top: 15px;
+//   position: relative;
+// }
 
-#navTabs a::before {
-  content:"";
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: aqua;
-  position: absolute;
-  top: 0;
-  width: 0%;
-  transition-duration: 250ms;
+// #navTabs a:hover {
+//   color: aqua;
+// }
 
-}
+// #navTabs a::before {
+//   content:"";
+//   display: block;
+//   height: 5px;
+//   width: 100%;
+//   background-color: aqua;
+//   position: absolute;
+//   top: 0;
+//   width: 0%;
+//   transition-duration: 250ms;
+// }
 
-#navTabs a:hover::before {
-  width: 100%;
-}
+// #navTabs a:hover::before {
+//   width: 100%;
+// }
 
 @media (min-width: 0px) {
-.vl {
-  border-left: 3px solid rgb(77, 4, 4);
-}
+  .vl {
+    border-left: 3px solid rgb(77, 4, 4);
+  }
 }
 
-#hero {
+.bkg-hero {
   background-image: url(../images/bgmain.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -52,14 +78,29 @@
   height: 100vh;
   min-height: 650px;
 }
-#hero h1 {
+
+h1 {
   font-size: 70px;
-  color: rgb(77, 4, 4);
+  color: rgb(211, 12, 12);
   margin-left: 20%;
   text-align: right;
 }
-#hero h4 {
+h4 {
   color: rgb(0, 0, 0);
   margin-right: 20%;
   text-align: left;
 }
+
+
+// #hero h1 {
+//   font-size: 70px;
+//   color: rgb(211, 12, 12);
+//   margin-left: 20%;
+//   text-align: right;
+// }
+
+// #hero h4 {
+//   color: rgb(0, 0, 0);
+//   margin-right: 20%;
+//   text-align: left;
+// }
