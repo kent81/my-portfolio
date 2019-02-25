@@ -91,7 +91,6 @@ h4 {
   text-align: left;
 }
 
-
 // #hero h1 {
 //   font-size: 70px;
 //   color: rgb(211, 12, 12);
@@ -104,3 +103,16 @@ h4 {
 //   margin-right: 20%;
 //   text-align: left;
 // }
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
