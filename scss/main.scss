@@ -1,23 +1,30 @@
 $navbar-height: 56px;
 $navbar-z-index: 10;
 
-#brand1 {
-  // margin-left: 10%;
-  // margin-right: 10%;
+.custompadding {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 
-  a {
-    color: rgb(77, 4, 4);
+@media (min-width: 768px) {
+  .vl {
+    border-left: 3px solid rgb(110, 10, 10);
   }
 }
 
-// #brand1 a {
-//   color: rgb(77, 4, 4);
-// }
-
+#brand1 {
+  a {
+    color: rgb(110, 10, 10);
+  }
+}
 
 .navbar {
   height: $navbar-height;
   z-index: $navbar-z-index;
+}
+
+.navbarcustom-bg {
+background-color: darkgrey;
 }
 
 #navTabs {
@@ -26,6 +33,7 @@ $navbar-z-index: 10;
     margin-left: 35px;
     padding-top: 15px;
     position: relative;
+  
   }
   a:hover {
     color: aqua;
@@ -46,52 +54,21 @@ $navbar-z-index: 10;
   }
 }
 
-// #navTabs li {
-//   display: inline-block;
-//   margin-left: 35px;
-//   padding-top: 15px;
-//   position: relative;
-// }
 
-// #navTabs a:hover {
-//   color: aqua;
-// }
-
-// #navTabs a::before {
-//   content:"";
-//   display: block;
-//   height: 5px;
-//   width: 100%;
-//   background-color: aqua;
-//   position: absolute;
-//   top: 0;
-//   width: 0%;
-//   transition-duration: 250ms;
-// }
-
-// #navTabs a:hover::before {
-//   width: 100%;
-// }
-
-@media (min-width: 0px) {
-  .vl {
-    border-left: 3px solid rgb(77, 4, 4);
-  }
-}
 
 .bkg-hero {
   // @TODO: get original image with opacity
-  background-image: url(../images/bgmain.jpg);
+  background-image: url(../images/jumbotron.png);
   background-size: cover;
   background-position: center bottom;
 }
 
 .section-1 {
   // @TODO: adjust min-height for mobile
-  min-height: 650px;
+  min-height: 450px;
 
   // @TODO: adjust paddint-top for mobile
-  padding-top: 18%;
+  padding: 10% 10% 5% 10%;
 
   // To move it up
   margin-top: -$navbar-height;
@@ -101,12 +78,7 @@ $navbar-z-index: 10;
 
 h1 {
   font-size: 70px;
-  color: rgb(211, 12, 12);
-}
-h4 {
-  color: rgb(0, 0, 0);
-  margin-right: 20%;
-  text-align: left;
+  color: rgb(110, 10, 10);
 }
 
 .jumbotron-header {
@@ -115,41 +87,102 @@ h4 {
   text-align: right;
 }
 
-// #hero h1 {
-//   font-size: 70px;
-//   color: rgb(211, 12, 12);
-//   margin-left: 20%;
-//   text-align: right;
-// }
-
-// #hero h4 {
-//   color: rgb(0, 0, 0);
-//   margin-right: 20%;
-//   text-align: left;
-// }
-// .container-fluid {
-//   width: 1080px;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
-// .row {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-right: -15px;
-//   margin-left: -15px;
-// }
-
-.custom-col-4 {
-  padding-top: calc(1 / 3 * 100%);
-  background-size: cover;
-  background-position: center;
+.button-color {
+  background-color: #008CBA;
+  color: white;
 }
-.test1 {
-  background-image: url(../images/image09.jpg);
+
+// Section 2 // 
+
+.scrollableRow {
+  overflow-x: scroll;
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.proj1thumb {
+  background-image: url(../images/thumbnail1.png);
   padding-top: calc(2 / 3 * 100%);
   background-size: cover;
   background-position: center bottom;
   max-width: 100%;
 }
+.proj2thumb {
+  background-image: url(../images/thumbnail2.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center bottom;
+  max-width: 100%;
+}
+.proj3thumb {
+  background-image: url(../images/thumbnail3.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center bottom;
+  max-width: 100%;
+}
+
+.proj1main {
+  background-image: url(../images/apple-clone.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: top;
+  max-width: 100%;
+}
+.proj2main {
+  background-image: url(../images/newsweek-clone.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: top;
+  max-width: 100%;
+}
+.proj3main {
+  background-image: url(../images/airbnb-clone.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: top;
+  max-width: 100%;
+}
+// ABOUT //
+.myphoto {
+  background-image: url(../images/me.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+// CONTACTS //
+
+.envelop {
+  background-image: url(../images/email.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+.mobile {
+  background-image: url(../images/smartphone.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+.linked-in {
+  background-image: url(../images/linkedin.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+.far {
+  font-size: 200px;
+}
+

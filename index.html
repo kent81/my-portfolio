@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- ask what this do -->
     <link rel="stylesheet" type="text/css" href="./public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Kent Tomale - Portfolio</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <nav class="navbar navbar-expand-sm navbar-light" id="brand1">
+          <nav class="navbar navbar-expand-md navbar-light" id="brand1">
             <a class="navbar-brand mr-auto" href="#"><b>k</b>ent <b>t</b>omale</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navTabs">
               <span class="navbar-toggler-icon">
@@ -20,10 +21,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navTabs">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">/home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">/my.works</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">/about</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">/contact.me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#brand1">/home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#recentwork">/my.works</a></li>
+                <li class="nav-item"><a class="nav-link" href="#abt">/about</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactme">/contact.me</a></li>
               </ul>
             </div>
           </nav>
@@ -36,17 +37,21 @@
     <section class="section-1 bkg-hero">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-12 col-md-6">
             <h1 class="jumbotron-header">Hello, I'm Kent</h1>
           </div>
-          <div class="col-sm-6 vl">
+          <div class="col-sm-12 col-md-6 vl">
             <p>I'm a full stack web developer who builds clean, efficient web experiences, and named after Superman.</br>
               <br>Let's meet up for coffee.
             </p>
-            <button class="btn btn-success px-4">Get coffee with Kent</button>
+            <a href="#contactme">
+              <button class="btn button-color px-4">Get coffee with Kent</button>
+            </a>
           </div>
-          <div class="col-12">
-            <p class="text-center">See recent work &#x2193;</p>
+          <div class="col-12" style="padding:5%">
+            <a href="#recentwork">
+              <h4 class="text-center">See recent work &#x2193;</h4>
+            </a>
           </div>
         </div>
       </div>
@@ -55,44 +60,47 @@
     <!-- Content Start -->
     <div class="container">
       <!-- 2nd Section Start -->
-      <hr>
+      <hr class="custompadding">
       <section class="row">
-      <div class="col-12">
-        <p class="text-center">Recent Work</p>
-        <a href="#recent-work-1">Go there</a>
+      <div class="col-12"  id="recentwork">
+        <h4 class="text-center">Recent Work</h4>
       </div>
       </section>
-      <section class="row">
-        <div class="col-4">
-          <div class="test1">
+      <section class="row flex-nowrap scrollableRow">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="#ace">
+            <div class="proj1thumb">
+            </div>
+          </a>            
+          <div>
+            <h4 class="text-center">Apple Clone Exercise</h4>
           </div>
           <div>
-            <p class="text-center">Apple Clone Exercise</p>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Altcademy</p>
           </div>
         </div>
-
-        <div class="col-4">
-          <div class="test1">
+        <div class="col-12 col-md-6 col-lg-4 vl">
+          <a href="#nce">
+            <div class="proj2thumb">
+            </div>            
+          </a>
+          <div>
+            <h4 class="text-center">Newsweek Clone Exercise</h4>
           </div>
           <div>
-            <p class="text-center">Newsweek Clone Exercise</p>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Altcademy</p>          
           </div>
         </div>
-
-        <div class="col-4">
-          <div class="test1">
+        <div class="col-12 col-md-6 col-lg-4 vl">
+          <a href="#apce">
+            <div class="proj3thumb">
+            </div>
+          </a>
+          <div>
+            <h4 class="text-center">AirBnB Press Clone Exercise</h4>
           </div>
           <div>
-            <p class="text-center">AirBnB Press Clone Exercise</p>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <P>Altcademy</P>
           </div>
         </div>
 
@@ -100,75 +108,104 @@
       <!-- 2nd Section End -->
 
       <!-- 3rd Section Start -->
-      <hr>
-      <section class="row">
+      <hr class="custompadding">
+      <section class="row" id="ace">
         <div class="col-6">
-          <p class="text-center">Apple Clone Exercise</p>
+          <h4 class="text-center">Apple Clone Exercise</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="col-6">
-          <div class="test1">
+          <div class="proj1main">
           </div>
         </div>
       </section>
-      <hr>
-      <section class="row">
+      <hr class="custompadding">
+      <section class="row" id="nce">
         <div class="col-6">
-          <div class="test1">
+          <div class="proj2main">
           </div>
         </div>
         <div class="col-6">
-          <p class="text-center">Newsweek Clone Exercise</p>
+          <h4 class="text-center">Newsweek Clone Exercise</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </section>
-      <hr>
-      <section class="row">
+      <hr class="custompadding">
+      <section class="row" id="apce">
         <div class="col-6">
-          <p class="text-center">AirBnB Press Clone Exercise</p>
+          <h4 class="text-center">AirBnB Press Clone Exercise</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="col-6">
-          <div class="test1">
+          <div class="proj3main">
           </div>
         </div>
       </section>
-      <hr>
+      <hr class="custompadding">
 
       <!-- ABOUT -->
       <div class="row">
-        <div class="col-12">
-          <p class="text-center">About</p>
+        <div class="col-12" id="abt">
+          <h4 class="text-center">About</h4>
         </div>
         <div class="col-6">
-          <p>Text text</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="col-6 vl">
-          <img src="###" alt="###">
+        <div class="col-6">
+          <div class="myphoto">
+          </div>
         </div>
       </div>
+      <hr class="custompadding">
 
+      <!-- Contact Start-->
       <div class="row">
-        <div class="col-12">
-          <p class="text-center">Contact</p>
+        <div class="col-12" id="contactme">
+          <h4 class="text-center">Contact</h4>
         </div>
-        <div class="test1">
-          <img src="###">
+        <div class="col-4">
+          <a href="mailto:kent.tomale@gmail.com">
+            <div class="envelop">          
+            </div>
+          </a>
+          <h5 class="text-center">Email</h5>
         </div>
-        <div class="test1 vl">
-          <img src="###">
+        <div class="col-4 vl">
+          <div class="mobile">          
+          </div>
+          <h5 class="text-center">(M) +852 6340 9558</h5>
         </div>
-        <div class="test1 vl">
-          <img src="###">
+        <div class="col-4 vl">
+          <a href="www.linkedin.com" target="_blank">
+            <div class="linked-in">
+            </div>
+          </a>
+          <h5 class="text-center">LinkedIn</h5>
         </div>
       </div>
-
+    <!-- Contact End-->
+    <hr class="custompadding">
+    <!-- Footer Start -->
+      <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light" id="brand1">
+              <a class="navbar-brand mr-auto" href="#"><b>k</b>ent <b>t</b>omale</a>
+              <div class="collapse navbar-collapse" id="navTabs">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="#brand1">/home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#recentwork">/my.works</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#abt">/about</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contactme">/contact.me</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+      </div>
+    <!-- Footer End -->
     </div>
     <!-- Content End -->
 
 
-    <!-- Footer Start -->
-    <!-- Footer End -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

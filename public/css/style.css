@@ -1,9 +1,20 @@
+.custompadding {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+@media (min-width: 768px) {
+  .vl {
+    border-left: 3px solid #6e0a0a; } }
+
 #brand1 a {
-  color: #4d0404; }
+  color: #6e0a0a; }
 
 .navbar {
   height: 56px;
   z-index: 10; }
+
+.navbarcustom-bg {
+  background-color: darkgrey; }
 
 #navTabs li {
   display: inline-block;
@@ -28,42 +39,109 @@
 #navTabs a:hover::before {
   width: 100%; }
 
-@media (min-width: 0px) {
-  .vl {
-    border-left: 3px solid #4d0404; } }
-
 .bkg-hero {
-  background-image: url(../images/bgmain.jpg);
+  background-image: url(../images/jumbotron.png);
   background-size: cover;
   background-position: center bottom; }
 
 .section-1 {
-  min-height: 650px;
-  padding-top: 18%;
+  min-height: 450px;
+  padding: 10% 10% 5% 10%;
   margin-top: -56px;
   z-index: 9; }
 
 h1 {
   font-size: 70px;
-  color: #d30c0c; }
-
-h4 {
-  color: black;
-  margin-right: 20%;
-  text-align: left; }
+  color: #6e0a0a; }
 
 .jumbotron-header {
   margin-left: 20%;
   text-align: right; }
 
-.custom-col-4 {
-  padding-top: calc(1 / 3 * 100%);
-  background-size: cover;
-  background-position: center; }
+.button-color {
+  background-color: #008CBA;
+  color: white; }
 
-.test1 {
-  background-image: url(../images/image09.jpg);
+.scrollableRow {
+  overflow-x: scroll;
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 18px;
+  padding-right: 18px; }
+
+.proj1thumb {
+  background-image: url(../images/thumbnail1.png);
   padding-top: calc(2 / 3 * 100%);
   background-size: cover;
   background-position: center bottom;
   max-width: 100%; }
+
+.proj2thumb {
+  background-image: url(../images/thumbnail2.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center bottom;
+  max-width: 100%; }
+
+.proj3thumb {
+  background-image: url(../images/thumbnail3.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center bottom;
+  max-width: 100%; }
+
+.proj1main {
+  background-image: url(../images/apple-clone.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: top;
+  max-width: 100%; }
+
+.proj2main {
+  background-image: url(../images/newsweek-clone.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: top;
+  max-width: 100%; }
+
+.proj3main {
+  background-image: url(../images/airbnb-clone.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: top;
+  max-width: 100%; }
+
+.myphoto {
+  background-image: url(../images/me.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%; }
+
+.envelop {
+  background-image: url(../images/email.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%; }
+
+.mobile {
+  background-image: url(../images/smartphone.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%; }
+
+.linked-in {
+  background-image: url(../images/linkedin.png);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%; }
+
+.far {
+  font-size: 200px; }
