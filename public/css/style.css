@@ -13,8 +13,9 @@
   height: 56px;
   z-index: 10; }
 
-.navbarcustom-bg {
-  background-color: darkgrey; }
+@media (max-width: 767px) {
+  .navbarcustom-bg {
+    background-color: darkgrey; } }
 
 #navTabs li {
   display: inline-block;
@@ -69,6 +70,12 @@ h1 {
   padding-left: 18px;
   padding-right: 18px; }
 
+.thumb {
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center bottom;
+  max-width: 100%; }
+
 .proj1thumb {
   background-image: url(../images/thumbnail1.png);
   padding-top: calc(2 / 3 * 100%);
@@ -84,11 +91,7 @@ h1 {
   max-width: 100%; }
 
 .proj3thumb {
-  background-image: url(../images/thumbnail3.png);
-  padding-top: calc(2 / 3 * 100%);
-  background-size: cover;
-  background-position: center bottom;
-  max-width: 100%; }
+  background-image: url(../images/thumbnail3.png); }
 
 .proj1main {
   background-image: url(../images/apple-clone.png);

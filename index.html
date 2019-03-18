@@ -20,7 +20,7 @@
               </span>
             </button>
             <div class="collapse navbar-collapse" id="navTabs">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-auto navbarcustom-bg">
                 <li class="nav-item"><a class="nav-link" href="#brand1">/home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#recentwork">/my.works</a></li>
                 <li class="nav-item"><a class="nav-link" href="#abt">/about</a></li>
@@ -59,18 +59,17 @@
     <!-- 1st Section End -->
     <!-- Content Start -->
     <div class="container">
-      <!-- 2nd Section Start -->
-      <hr class="custompadding">
+    <!-- 2nd Section Start -->
+    <hr class="custompadding">
       <section class="row">
-      <div class="col-12"  id="recentwork">
-        <h4 class="text-center">Recent Work</h4>
-      </div>
+        <div class="col-12"  id="recentwork">
+          <h4 class="text-center">Recent Work</h4>
+        </div>
       </section>
       <section class="row flex-nowrap scrollableRow">
         <div class="col-12 col-md-6 col-lg-4">
           <a href="#ace">
-            <div class="proj1thumb">
-            </div>
+            <div class="proj1thumb"></div>
           </a>            
           <div>
             <h4 class="text-center">Apple Clone Exercise</h4>
@@ -81,20 +80,14 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4 vl">
           <a href="#nce">
-            <div class="proj2thumb">
-            </div>            
+            <div class="proj2thumb"></div>            
           </a>
-          <div>
-            <h4 class="text-center">Newsweek Clone Exercise</h4>
-          </div>
-          <div>
-            <p>Altcademy</p>          
-          </div>
+          <h4 class="text-center">Newsweek Clone Exercise</h4>
+          <p>Altcademy</p>          
         </div>
         <div class="col-12 col-md-6 col-lg-4 vl">
           <a href="#apce">
-            <div class="proj3thumb">
-            </div>
+            <div class="thumb proj3thumb"></div>
           </a>
           <div>
             <h4 class="text-center">AirBnB Press Clone Exercise</h4>
@@ -110,37 +103,46 @@
       <!-- 3rd Section Start -->
       <hr class="custompadding">
       <section class="row" id="ace">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <h4 class="text-center">Apple Clone Exercise</h4>
+            <div>
+              <div class="proj1main d-md-none"></div>
+            </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="col-6">
-          <div class="proj1main">
-          </div>
+          <div class="proj1main d-none d-md-block"></div>
         </div>
       </section>
+
       <hr class="custompadding">
+
       <section class="row" id="nce">
-        <div class="col-6">
-          <div class="proj2main">
-          </div>
+        <div class="col-12 col-md-6">
+          <h4 class="text-center d-md-none">Newsweek Clone Exercise</h4>
+          <div class="proj2main"></div>
         </div>
-        <div class="col-6">
-          <h4 class="text-center">Newsweek Clone Exercise</h4>
+        <div class="col-md-6">
+          <h4 class="text-center d-none d-md-block">Newsweek Clone Exercise</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </section>
+
       <hr class="custompadding">
+
       <section class="row" id="apce">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <h4 class="text-center">AirBnB Press Clone Exercise</h4>
+            <div>
+              <div class="proj3main d-md-none"></div>
+            </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="col-6">
-          <div class="proj3main">
-          </div>
+          <div class="proj3main d-none d-md-block"></div>
         </div>
       </section>
+
       <hr class="custompadding">
 
       <!-- ABOUT -->
@@ -164,22 +166,15 @@
           <h4 class="text-center">Contact</h4>
         </div>
         <div class="col-4">
-          <a href="mailto:kent.tomale@gmail.com">
-            <div class="envelop">          
-            </div>
-          </a>
+          <a href="mailto:kent.tomale@gmail.com"><div class="envelop"></div></a>
           <h5 class="text-center">Email</h5>
         </div>
         <div class="col-4 vl">
-          <div class="mobile">          
-          </div>
+          <div class="mobile"></div>
           <h5 class="text-center">(M) +852 6340 9558</h5>
         </div>
         <div class="col-4 vl">
-          <a href="www.linkedin.com" target="_blank">
-            <div class="linked-in">
-            </div>
-          </a>
+          <a href="https://www.linkedin.com" target="_blank"><div class="linked-in"></div></a>
           <h5 class="text-center">LinkedIn</h5>
         </div>
       </div>
@@ -204,8 +199,6 @@
     <!-- Footer End -->
     </div>
     <!-- Content End -->
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

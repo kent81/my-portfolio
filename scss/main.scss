@@ -24,8 +24,19 @@ $navbar-z-index: 10;
 }
 
 .navbarcustom-bg {
-background-color: darkgrey;
+  @media (max-width: 767px) {
+    background-color: darkgrey;
+  }
 }
+
+// .center-md {
+//   @media (min-width: 768px) {
+//     position: absolute;
+//     bottom: 60px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+// }
 
 #navTabs {
   li {
@@ -101,6 +112,14 @@ h1 {
   padding-left: 18px;
   padding-right: 18px;
 }
+
+.thumb {
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center bottom;
+  max-width: 100%;
+}
+
 .proj1thumb {
   background-image: url(../images/thumbnail1.png);
   padding-top: calc(2 / 3 * 100%);
@@ -117,10 +136,6 @@ h1 {
 }
 .proj3thumb {
   background-image: url(../images/thumbnail3.png);
-  padding-top: calc(2 / 3 * 100%);
-  background-size: cover;
-  background-position: center bottom;
-  max-width: 100%;
 }
 
 .proj1main {
